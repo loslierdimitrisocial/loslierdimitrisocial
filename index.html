@@ -1,9 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Layout</title>
+</head>
+<body>
 
-        <h1>My First Heading</h1>
-        <p>My first paragraph.</p>
+  <header>
+    <h1>Site Header</h1>
+  </header>
 
-    </body>
-</html> 
+  <main id="content">
+    <!-- Content will be loaded here -->
+  </main>
+
+  <footer>
+    <p>Site Footer</p>
+  </footer>
+
+  <script>
+    // Load content.html into #content
+    fetch('index_2.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('content').innerHTML = html;
+      });
+  </script>
+</body>
+</html>

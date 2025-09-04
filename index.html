@@ -6,24 +6,34 @@
 </head>
 <body>
 
-  <header>
-    <h1>Site Header</h1>
+  <header id="header">
+    <!-- <h1>Site Header</h1> -->
   </header>
 
   <main id="content">
     <!-- Content will be loaded here -->
   </main>
 
-  <footer>
-    <p>Site Footer</p>
+  <footer id="footer">
+    <!-- <p>Site Footer</p> -->
   </footer>
 
   <script>
     // Load content.html into #content
+    fetch('page_header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header').innerHTML = html;
+      });
     fetch('index_2.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('content').innerHTML = html;
+      });
+    fetch('page_footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer').innerHTML = html;
       });
   </script>
 </body>

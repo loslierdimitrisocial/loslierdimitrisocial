@@ -1,8 +1,41 @@
-* {
-    color: red;
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#id_content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+header {
+    position: absolute;
+    top: 0;
 }
 
 footer {
     position: absolute;
     bottom: 0;
+}
+
+.header_bar, .footer_bar {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    width: 100%;
+    height: 50px;
+}
+.header_bar_logo, .footer_bar_logo {
+    color: blue;
+    width: 100px;
+}
+.header_bar_button {
+    color: red;
+    width: 200px;
+}
+.header_bar_social, .footer_bar_social {
+    color: green;
+    width: 50px;
+    position: absolute;
+    margin-right: 0;
 }

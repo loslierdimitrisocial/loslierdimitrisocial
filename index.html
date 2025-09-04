@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <title>Main Layout</title>
 </head>
 <body>
 
+    <div id="id_header">
+
+    </div>
+
+    <div id="id_content">
+
+    </div>
+
+    <div id="id_footer">
+
+    </div>
+
   <header id="header">
-    <!-- <h1>Site Header</h1> -->
   </header>
 
   <main id="content">
-    <!-- Content will be loaded here -->
   </main>
 
-  <footer id="footer">
-    <!-- <p>Site Footer</p> -->
-  </footer>
+  <div id="footer">
+  </div>
 
-  <script>
-    // Load content.html into #content
-    fetch('page_header.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('header').innerHTML = html;
-      });
-    fetch('index_2.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('content').innerHTML = html;
-      });
-    fetch('page_footer.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('footer').innerHTML = html;
-      });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

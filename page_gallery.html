@@ -1,18 +1,22 @@
 <section>
     <div class="display_flex_row">
-        <button class="gallery_button">
-            Portrait
+        <button onclick="set_page('gallery_portrait', 'content')" class="gallery_button">
+            <p>Portrait</p>
+            <img src="source/image/img_1.jpg" />
         </button>
-        <button class="gallery_button">
-            Nature
+        <button onclick="set_page('gallery_nature', 'content')" class="gallery_button">
+            <p>Nature</p>
+            <img src="source/image/img_2.jpg" />
         </button>
     </div>
     <div class="display_flex_row">
-        <button onclick="set_page('gallery_portrait', 'content')" class="gallery_button, gallery_button_0">
+        <button onclick="set_page('gallery_event', 'content')" class="gallery_button">
             <p>Evènement</p>
+            <img src="source/image/img_3.jpg" />
         </button>
-        <button class="gallery_button">
-            Boudoir
+        <button onclick="set_page('gallery_boudoir', 'content')" class="gallery_button">
+            <p>Boudoir</p>
+            <img src="source/image/img_0.jpg" />
         </button>
     </div>
 </section>

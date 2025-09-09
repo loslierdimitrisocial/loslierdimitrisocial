@@ -1,3 +1,11 @@
+
+:root {
+    --color_white: #ffffff;
+    --color_light: #d3cdcd;
+    --color_dark: #272626;
+    --color_bordeaux: #6d071a;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +22,7 @@ header {
     margin-bottom: 60px;
     width: 100%;
     height: 60px;
-    background-color: #d3cdcd;
+    background-color: var(--color_light);
 }
 header > * {
     display: flex;
@@ -27,7 +35,7 @@ footer {
     margin-top: 60px;
     width: 100%;
     height: 60px;
-    background-color: #d3cdcd;
+    background-color: var(--color_light);
 }
 footer > * {
     display: flex;
@@ -40,16 +48,20 @@ section {
 }
 
 .logo {
-    width: 10px;
-    height: 10px;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+}
+.icon {
+    margin: 5px;
 }
 .icon_instagram {
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
 }
 .icon_facebook {
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .display_flex_row {
@@ -85,12 +97,12 @@ button {
     font-size: large;
     border-radius: 0;
     border: 0;
-    background-color: #6d071a;
+    background-color: var(--color_bordeaux);
     color: #d3cdcd;
 }
 button:hover {
     background-color: rgb(241, 199, 213);
-    color: #272626;
+    color: var(--color_dark);
 }
 .gallery_button {
     font-size: xx-large;

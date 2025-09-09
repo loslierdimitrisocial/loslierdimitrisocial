@@ -1,20 +1,18 @@
-<header class="site-header">
-  <div class="header-left">
-    <div class="logo">
-        <img src="source/logo/camera.png" alt="Logo" width="30" height="30">
+<header>
+    <div class="display_flex_row">
+
+        <a class="display_left">logo</a>
+
+        <div class="display_center">
+            <button onclick="set_page('home', 'content')">home</button>
+            <button onclick="set_page('gallery', 'content')">gallery</button>
+            <button onclick="set_page('contact', 'content')">contact</button>
+        </div>
+
+        <div class="display_right">
+            <a>instagram</a>
+            <a>facebook</a>
+        </div>
+
     </div>
-    <nav class="nav-buttons">
-      <button onclick="loadPage('page_home.html')">Accueil</button>
-      <button onclick="loadPage('page_gallery.html')">Gallerie</button>
-      <button onclick="loadPage('page_contact.html')">Contact</button>
-    </nav>
-  </div>
-  <div class="header-right">
-    <a href="https://www.instagram.com/loslierdimitri/">
-        <img src="source/icon/instagram.png" alt="Description of image" width="30" height="30">
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61580281411462">
-        <img src="source/icon/facebook.png" alt="Description of image" width="30" height="30">
-    </a>
-  </div>
 </header>

@@ -54,22 +54,11 @@ section {
 }
 .icon {
     margin: 5px;
-}
-.icon_instagram {
-    width: 40px;
-    height: 40px;
-}
-.icon_facebook {
     width: 40px;
     height: 40px;
 }
 
-.display_flex_row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.display_flex_row > * {
+.display_flex_row, .display_flex_row > * {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -77,7 +66,7 @@ section {
 .display_flex_col, .display_flex_col > * {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 100%;
 }
 
 .display_left {
@@ -104,6 +93,7 @@ button:hover {
     background-color: rgb(241, 199, 213);
     color: var(--color_dark);
 }
+
 .gallery_button {
     font-size: xx-large;
     height: 400px;
@@ -126,4 +116,17 @@ button:hover {
 }
 .gallery_button img:hover {
     opacity: 0.1;
+}
+
+.gallery_image {
+    padding: 5px;
+}
+.gallery_image > p{
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_light);
+    background-color: var(--color_bordeaux);
+    height: 40px;
+    user-select: none;
 }

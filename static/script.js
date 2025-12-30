@@ -9,7 +9,7 @@ async function button_clipboard(string_id_) {
     var text = document.getElementById(string_id_).innerHTML;
     await navigator.clipboard.writeText(text);
 
-    showAlert("test")
+    showAlert("Le texte a été copié dans le presse-papiers.");
 }
 
 function showAlert(message) {

@@ -2,6 +2,14 @@
     --color_white: #ffffff;
     --color_black: #000000;
     --color_bordeaux: #800020;
+    --color_bordeaux_light: #a8002a;
+    --color_bordeaux_dark: #590016;
+    --color_clear: #e7e4df;
+    --color_clear_light: #f7f4ef;
+    --color_clear_dark: #ccc9c3;
+
+    --size_header: 50px;
+    --size_footer: 50px;
 }
 
 * {
@@ -13,4 +21,60 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background-color: var(--color_bordeaux);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: var(--size_header);
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+}
+
+#footer {
+    background-color: var(--color_bordeaux);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: var(--size_footer);
+    width: 100%;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+#header > #left,
+#footer > #left {
+    align-items: center;
+    display: flex;
+}
+
+#header > #center,
+#footer > #center {
+    align-items: center;
+    display: flex;
+}
+
+#header > #right,
+#footer > #right {
+    align-items: center;
+    display: flex;
+}
+
+#content {
+    margin-top: var(--size_header);
+    margin-bottom: var(--size_footer);
+}
+
+button {
+    border-style: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    background-color: var(--color_clear);
 }
